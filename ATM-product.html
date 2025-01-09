@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-True Market - Products</title>
+  <link rel="stylesheet" href="ATM-product.css">
+  <script src="ATM-product.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to A-True Market</h1>
+    <nav>
+      <ul>
+        <li><a href="A-True%20Market.html">Home</a></li>
+        <li><a href="ATM-product.html">Products</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Our Products</h2>
+
+    <!-- Filter Section -->
+    <div class="filter">
+      <label for="category">Filter by Category:</label>
+      <select id="category" onchange="filterProducts()">
+        <option value="all">All</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="organic">Organic</option>
+      </select>
+    </div>
+
+    <!-- Product List -->
+    <div id="product-list">
+      <div class="product-item" data-category="fruits">
+        <img src="apple.jpg" alt="Apple">
+        <h3>Apple</h3>
+        <p>$2.00</p>
+      </div>
+      <div class="product-item" data-category="vegetables">
+        <img src="carrot.jpg" alt="Carrot">
+        <h3>Carrot</h3>
+        <p>$1.50</p>
+      </div>
+      <div class="product-item" data-category="organic">
+        <img src="organic-potato.jpg" alt="Organic Potato">
+        <h3>Organic Potato</h3>
+        <p>$3.00</p>
+      </div>
+      <div class="product-item" data-category="fruits">
+        <img src="banana.jpg" alt="Banana">
+        <h3>Banana</h3>
+        <p>$1.20</p>
+      </div>
+      <div class="product-item" data-category="vegetables">
+        <img src="spinach.jpg" alt="Spinach">
+        <h3>Spinach</h3>
+        <p>$2.50</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 A-True Market. All rights reserved.</p>
+  </footer>
+</body>
+</html>

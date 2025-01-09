@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* For tablets and smaller screens */
+  
+  header h1 {
+    font-size: 24px;
+  }
+
+  header ul li {
+    display: block; /* Stack the navigation links vertically */
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 1rem; /* Reduce padding on small screens */
+    margin: 0 1rem;
+  }
+
+  footer {
+    padding: 1rem 0; /* Adjust padding in the footer */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* For mobile screens */
+  
+  header h1 {
+    font-size: 20px; /* Make the header smaller on mobile */
+  }
+
+  section {
+    padding: 0.5rem; /* Reduce padding on very small screens */
+    margin: 0 0.5rem;
+  }
+
+  footer {
+    padding: 0.5rem 0;
+  }
+
+  header ul li {
+    font-size: 14px; /* Smaller font size for navigation items */
+  }
+}
